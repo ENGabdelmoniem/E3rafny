@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: white;
+    padding-bottom: 40px;
+}
+
+header {
+    background: #111c31;
+    padding: 25px 8%;
+    border-bottom: 1px solid #26344d;
+}
+
+header h1 {
+    color: #38bdf8;
+    font-size: 30px;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #162238;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #26344d;
+}
+
+.stat-card h2 {
+    color: #38bdf8;
+    font-size: 38px;
+}
+
+.stat-card p {
+    color: #cbd5e1;
+    margin-top: 8px;
+}
+
+.panel {
+    background: #162238;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #26344d;
+}
+
+.panel h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0b1120;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+.customer-item {
+    background: #0b1120;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.customer-item h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.customer-item p {
+    color: #cbd5e1;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
+/* =================================
+   E3RAFNY - ADMIN PROFESSIONAL DESIGN
+================================= */
+
+:root {
+    --primary: #6750e8;
+    --dark: #17172b;
+    --background: #f5f6fc;
+    --white: #ffffff;
+    --text: #292943;
+    --muted: #77778e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+header {
+    background: var(--dark);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+h1, h2, h3 {
+    color: var(--dark);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e1e1ef;
+    border-radius: 10px;
+    background: white;
+    font-family: Arial, sans-serif;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(103,80,232,0.1);
+}
+
+section, .card, .dashboard-card {
+    border-radius: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+/* Fix input text visibility */
+
+input,
+textarea,
+select {
+    color: #292943 !important;
+    background-color: #ffffff !important;
+    caret-color: #6750e8;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9999aa !important;
+    opacity: 1;
+}
