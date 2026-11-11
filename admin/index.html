@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E3rafny | لوحة التحكم</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>E3rafny</h1>
+        <p>لوحة التحكم الرئيسية</p>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div class="stat-card">
+                <h2 id="customerCount">0</h2>
+                <p>العملاء</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pageCount">0</h2>
+                <p>الصفحات المنشورة</p>
+            </div>
+        </section>
+
+        <section class="panel">
+    <h2>إضافة عميل جديد</h2>
+
+    <input type="text" id="customerName" placeholder="اسم العميل">
+
+    <textarea id="customerBio" placeholder="نبذة عن العميل"></textarea>
+
+    <input type="text" id="customerHobbies" placeholder="الهوايات">
+
+    <textarea id="customerAchievements" placeholder="الإنجازات"></textarea>
+
+    <label>الصورة الشخصية</label>
+    <input type="file" id="customerMainImage" accept="image/*">
+
+    <label>معرض الصور (يمكن اختيار أكثر من صورة)</label>
+    <input type="file" id="customerGallery" accept="image/*" multiple>
+
+    <input type="url" id="customerInstagram" placeholder="رابط Instagram">
+
+<input type="url" id="customerFacebook" placeholder="رابط Facebook">
+
+<input type="url" id="customerTikTok" placeholder="رابط TikTok">
+
+<input type="url" id="customerYouTube" placeholder="رابط YouTube">
+
+<input type="url" id="customerX" placeholder="رابط X (Twitter)">
+
+<input type="url" id="customerWhatsApp" placeholder="رابط WhatsApp">
+
+<input type="url" id="customerLinkedIn" placeholder="رابط LinkedIn">
+
+<input type="url" id="customerWebsite" placeholder="رابط الموقع الشخصي">
+    <button onclick="addCustomer()">
+        + إضافة عميل جديد
+    </button>
+</section>
+
+            
+
+        <section class="panel">
+            <h2>العملاء</h2>
+            <div id="customerList"></div>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
